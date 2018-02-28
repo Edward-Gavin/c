@@ -1,6 +1,5 @@
-Git is a version control system.
-Git is a free sofeware.
-Git is a distributed version control system.
-Git is a free sofeware.
+C program language is a old language.
+learn c program language for get master degree.
 
-Github is a website.
+
+The book wrote by 谭浩强
