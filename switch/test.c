@@ -3,13 +3,24 @@
 
 int main(void)
 {
-	int a, b;
-	char c, d;
-	float f;
+	char grade;
 
-	scanf("%d", &a);
-	printf("%d", a);
+	scanf("%c", &grade);
+	printf("your score: ", grade);
+	switch(grade)
+	{
+	case 'A': printf("85-100\n");
+		break;
+	case 'B': printf("70-84\n");
+		break;
+	case 'C': printf("60-69\n");
+		break;
+	case 'D': printf("<60\n");
+		break;
+	default: printf("enter data error!\n");
+	}
 
+	getch();
 	return 0;
 }
 
