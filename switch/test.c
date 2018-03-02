@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int main(void)
+int main1(void)
 {
 	char grade;
 
@@ -24,3 +24,34 @@ int main(void)
 	return 0;
 }
 
+int main(void)
+{
+	void action1(int, int);
+	void action2(int, int);
+
+	char ch;
+	int a=15, b=23;
+	ch = getchar();
+
+	switch(ch)
+	{
+	case 'a':
+	case 'A': action1(a, b); break;
+	case 'b':
+	case 'B': action2(a, b); break;
+	default: putchar('\a');
+	}
+
+	getch();
+	return 0;
+}
+
+void action1(int a, int b)
+{	
+	printf("a + b = %d\n", a+b);
+}
+
+void action2(int a, int b)
+{
+	printf("a * b = %d\n", a*b);
+}
