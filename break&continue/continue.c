@@ -2,13 +2,15 @@
 
 int main(void)
 {
-	int i;
-	for (i = 100; i <= 200; i++)
+	int n;
+	for (n = 100; n <= 200; n++)
 	{
-		if (i % 3 == 0)
+		if (n % 3 == 0)
 			continue;
-		printf("%d", i);
+		printf("%d", n);
 	}
+	printf("\n");
+
 	system("pause");
 	return 0;
 }
