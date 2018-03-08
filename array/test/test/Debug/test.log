@@ -1,0 +1,4 @@
+﻿  test.cpp
+f:\c\array\test\test\test.cpp(92): warning C4101: “b”: 未引用的局部变量
+f:\c\array\test\test\test.cpp(91): warning C4101: “pay”: 未引用的局部变量
+  test.vcxproj -> F:\c\array\test\Debug\test.exe
