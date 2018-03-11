@@ -28,7 +28,7 @@ void print_message()
 }
 
 
-int max(int a, int b)
+int max1(int a, int b)
 {
 	int z;
 	z = (a > b) ? a : b;
@@ -37,16 +37,39 @@ int max(int a, int b)
 
 int main2(void)
 {
-	int max(int, int);
+	int max1(int, int);
 
 	int temp, a, b, c, maxnum;
 	printf("Please input three numbers: \n");
 	scanf_s("%d,%d,%d", &a, &b, &c);
-	temp = max(a, b);
-	maxnum = max(temp, c);
+	temp = max1(a, b);
+	maxnum = max1(temp, c);
 	printf("The max number is %d", maxnum);
 
 	system("pause");
 	return 0;
+}
+
+int main3(void)
+{
+	int max(float, float);		//函数声明
+
+	float a, b;
+	int maxnumber;
+
+	printf("Please input two numbers: \n");
+	scanf_s("%f,%f", &a, &b);
+	maxnumber = max(a, b);
+	printf("The max number is: %d\n", maxnumber);
+	
+	system("pause");
+	return 0;
+}
+
+int max(float a, float b)		//若函数类型与返回值类型不一致，则强制转换返回值类型为函数类型。
+{
+	float t;
+	t = (a > b) ? a : b;
+	return t;
 }
 
