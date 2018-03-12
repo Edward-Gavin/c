@@ -73,3 +73,134 @@ int max(float a, float b)		//Èôº¯ÊıÀàĞÍÓë·µ»ØÖµÀàĞÍ²»Ò»ÖÂ£¬ÔòÇ¿ÖÆ×ª»»·µ»ØÖµÀàĞÍÎ
 	return t;
 }
 
+int main4(void)				//4ÊıÖĞµÄ×î´óÊı
+{
+	int max4(int, int, int, int);
+	int a, b, c, d, maxn;
+	printf("Please input 4 numbers: \n");
+	scanf_s("%d,%d,%d,%d", &a, &b, &c, &d);
+
+	maxn = max4(a, b, c, d);
+	printf("max is %d. \n", maxn);
+
+	system("pause");
+	return 0;
+}
+
+int max4(int a, int b, int c, int d)
+{
+	int max1(int, int);
+	int m;
+
+	m = max1(a, b);
+	m = max1(m, c);
+	m = max1(m, d);
+
+	return m;
+}
+
+int main5(void)			//º¯ÊıµÄµİ¹éµ÷ÓÃ
+{
+	int age(int);
+	printf("No.5 -age: %d", age(5));
+
+	system("pause");
+	return 0;
+}
+
+int age(int n)
+{
+	int c;
+	if (n == 1)
+		c = 10;
+	else
+		c = age(n - 1) + 2;
+	return(c);
+
+}
+
+int main6(void)				//Çón!
+{
+	int fac(int);
+	int n, sum;
+	printf("Please input the n: \n");
+	scanf_s("%d", &n);
+	sum = fac(n);
+	printf("%d sum is: %d", n, sum);
+
+	system("pause");
+	return 0;
+}
+
+int fac(int n)
+{
+	int f;
+
+	if (n < 0)
+		printf("n<0, error data.");
+	else if (n==1||n==0)
+		f = 1;
+	else
+		f = fac(n - 1)*n;
+	return f;
+
+}
+
+int main7(void)				//Êı×é×öº¯ÊıµÄ²ÎÊı
+{
+	int max1(int, int);
+	int a[10], n, m, i;
+
+	printf("Please input 10 numbers: \n");
+	for (i = 0; i < 10; i++)
+	{
+		scanf_s("%d", &a[i]);
+	}
+
+	for (i = 1, m = a[0], n = 0; i < 10; i++)
+	{
+		if (max(m, a[i]) > m)
+		{
+			m = max(m, a[i]);
+			n = i;
+		}
+	}
+	printf("The largest number is %d\nIt is %dth number.\n", m, n + 1);
+
+	system("pause");
+	return 0;
+}
+
+
+int main(void)
+{
+	float average(float array[10]);
+
+	float score[10], aver;
+	int i;
+
+	for (i = 0; i < 10; i++)
+	{
+		scanf_s("%f", &score[i]);
+	}
+	printf("\n");
+
+	aver = average(score);
+	printf("average is: %f", aver);
+
+	system("pause");
+	return 0;
+}
+
+float average(float array[10])
+{
+	int i;
+	float sum = 0;
+	float aver;
+
+	for (i = 0; i < 10; i++)
+		sum += array[i];
+
+	aver = sum / 10;
+	return aver;
+}

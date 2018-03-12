@@ -1,3 +1,5 @@
 ﻿  test.cpp
-f:\c\function\test\test\test.cpp(73): warning C4244: “return”: 从“float”转换到“int”，可能丢失数据
-  test.vcxproj -> F:\c\function\test\Debug\test.exe
+c:\users\administrator\desktop\c\function\test\test\test.cpp(73): warning C4244: “return”: 从“float”转换到“int”，可能丢失数据
+c:\users\administrator\desktop\c\function\test\test\test.cpp(162): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+c:\users\administrator\desktop\c\function\test\test\test.cpp(164): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+  test.vcxproj -> C:\Users\Administrator\Desktop\c\function\test\Debug\test.exe
