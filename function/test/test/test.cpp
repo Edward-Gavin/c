@@ -172,7 +172,7 @@ int main7(void)				//数组做函数的参数
 }
 
 
-int main(void)
+int main8(void)
 {
 	float average(float array[10]);
 
@@ -203,4 +203,53 @@ float average(float array[10])
 
 	aver = sum / 10;
 	return aver;
+}
+
+int main9(void)
+{
+	float average(float array[], int n);
+
+	float score1[5] = { 98,99,67,87,93 };
+	float score2[10] = { 67.2,89,87,98,96,85,67,77,88,76 };
+
+	printf("The average of class A is: %6.2f\n", average(score1, 5));
+	printf("The average of class B is: %6.2f\n", average(score2, 10));
+
+	system("pause");
+	return 0;
+}
+
+float average(float array[], int n)
+{
+	int i;
+	float aver, sum = array[0];
+	for (i = 1; i < n; i++)
+		sum = sum + array[i];
+	aver = sum / n;
+	return aver;
+}
+
+
+int main(void) //选择法进行数组排序
+{
+	int array[10] = { 11,33,66,22,44,55,99,88,77,10 };
+
+
+	system("pause");
+	return 0;
+}
+
+void sort(int arr[], int n)
+{
+	int i, j, k, t;
+	for (i = 0; i < n - 1; i++)
+	{
+		k = i;
+		for (j = i + 1; j < n; j++)
+			if (arr[i] < arr[j])
+				k = j;
+		t = arr[k];
+		arr[k] = arr[i];
+		arr[i] = t;
+	}
 }
