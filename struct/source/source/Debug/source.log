@@ -1,0 +1,3 @@
+﻿  one.cpp
+c:\users\administrator\desktop\c\struct\source\source\one.cpp(22): warning C4101: “students_2”: 未引用的局部变量
+  source.vcxproj -> C:\Users\Administrator\Desktop\c\struct\source\Debug\source.exe
