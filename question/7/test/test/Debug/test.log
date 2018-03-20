@@ -1,0 +1,5 @@
+﻿  1.cpp
+c:\users\administrator\desktop\c\question\7\test\test\1.cpp(81): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\administrator\desktop\c\question\7\test\test\1.cpp(82): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\administrator\desktop\c\question\7\test\test\1.cpp(95): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  test.vcxproj -> C:\Users\Administrator\Desktop\c\question\7\test\Debug\test.exe
