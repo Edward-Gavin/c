@@ -34,7 +34,7 @@ struct y_m_d {
 	int day;
 }date;
 
-int main(void)
+int main2(void)
 {
 	int days(struct y_m_d date1);
 	printf("Input year, month, day: \n");
@@ -79,4 +79,62 @@ int days(struct y_m_d date1)
 	if ((date1.year % 4 == 0 && date1.year % 100 != 0 || date1.year % 400 == 0) && date1.month >= 3)
 		sum += 1;
 	return (sum);
+}
+
+struct Students {
+	char num[6];
+	char name[10];
+	int score[4];
+};
+
+int main(void)
+{
+	
+	void print(struct Students stu[6]);
+	struct Students stu[5];
+	int j, i;
+
+	for (i = 0; i < 5; i++)
+	{
+		printf("\nInput score of student %d\n",i+1);
+		printf("No.: ");
+		scanf_s("%s", stu[i].num);
+		printf("Name: ");
+		scanf_s("%s", stu[i].name);
+		for (j = 0; j < 3; j++)
+		{
+			printf("Score: %d", j + 1);
+			scanf_s("%d", &stu[i].score[j]);
+		}
+		printf("\n");
+
+	}
+	print(stu);
+
+	system("pause");
+	return 0;
+}
+
+void print(struct Students stu[6])
+{
+	int i, j;
+	printf("\n No. name score1 score2 score3\n");
+	for (i = 0; i < 5; i++)
+	{
+		printf("%5s%10s", stu[i].num, stu[i].name);
+		for (j = 0; j < 3; j++)
+		{
+			printf("%9d",stu[i].score[j]);
+		}
+		printf("\n");
+	}
+}
+
+int main3(void)
+{
+
+
+
+	system("pause");
+	return 0;
 }
