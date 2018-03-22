@@ -2,4 +2,8 @@
 c:\users\administrator\desktop\c\question\7\test\test\1.cpp(81): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
 c:\users\administrator\desktop\c\question\7\test\test\1.cpp(82): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
 c:\users\administrator\desktop\c\question\7\test\test\1.cpp(95): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\administrator\desktop\c\question\7\test\test\1.cpp(109): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+  c:\users\administrator\desktop\c\question\7\test\test\1.cpp(109): note: 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
+  c:\users\administrator\desktop\c\question\7\test\test\1.cpp(109): note: 缺失的可变参数 1 为格式字符串“%d”所需
+  LINK : 没有找到 C:\Users\Administrator\Desktop\c\question\7\test\Debug\test.exe 或上一个增量链接没有生成它；正在执行完全链接
   test.vcxproj -> C:\Users\Administrator\Desktop\c\question\7\test\Debug\test.exe
